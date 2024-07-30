@@ -48,12 +48,6 @@ export default function Sidebar() {
                 <span>Contact</span>
             </NavLink>
 
-            <NavLink to="/admin/cv" className="flex flex-row gap-4 p-4 no-underline">
-                <ChatBubbleLeftRightIcon className="block h-6 w-6 flex-start" aria-hidden="true" />
-                <span>ATS CV</span>
-            </NavLink>
-
-
         </div>
 
     )

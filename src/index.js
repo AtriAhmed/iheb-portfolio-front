@@ -17,10 +17,10 @@ import Layout from './components/layouts/Layout';
 import Skills from './components/skills/Skills';
 import Work from './components/work/Work';
 import './index.css'
-import CV from './components/cv/CV';
 import ViewContact from './components/admin/contact/ViewContact';
 import Education from './components/admin/education/Education';
 import ATSCV from './components/admin/cv/ATSCV';
+import Home from './components/pages/Home';
 
 const router = createBrowserRouter([
    {
@@ -79,23 +79,7 @@ const router = createBrowserRouter([
                },
                {
                   path: "",
-                  element: <About />
-               },
-               {
-                  path: "/skills",
-                  element: <Skills />
-               },
-               {
-                  path: "/works",
-                  element: <Work />
-               },
-               {
-                  path: "/contact",
-                  element: <Contact />
-               },
-               {
-                  path: "/cv",
-                  element: <CV />
+                  element: <Home />
                }
             ]
          }

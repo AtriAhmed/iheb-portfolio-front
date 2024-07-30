@@ -3,6 +3,7 @@ import React from 'react'
 import { Outlet } from 'react-router'
 import Navbare from './Navbare'
 import Footer from './Footer'
+import MobileNavbar from './MobileNavbar'
 
 export default function Layout() {
     const locations = ["/login", "/register"]
@@ -17,8 +18,8 @@ export default function Layout() {
 
     return (
         <>
-            {haveLayout() ? <Navbare /> : ""}
-            <div className="p-10" ><Outlet /></div>
+            {haveLayout() ? <><MobileNavbar /><Navbare /></> : ""}
+            <div className="p-4 sm:p-10 bg-black text-white min-h-screen" ><Outlet /></div>
             {/*haveLayout() ? <Footer /> : ""*/}
         </>
     )
