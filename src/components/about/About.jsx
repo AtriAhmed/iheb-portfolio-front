@@ -30,9 +30,7 @@ export default function About() {
   }, [abouts.length]);
 
   if (loading) {
-    return (<div>
-      <Loading />
-    </div>)
+    return <Loading />
   }
   return (
     <div id='about' className='max-w-7xl mx-auto min-h-screen flex flex-col justify-center my-20'>

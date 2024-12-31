@@ -35,6 +35,7 @@ export default function AddExperienceCmp() {
 
     const itemSubmit = (e) => {
         e.preventDefault();
+
         const formData = new FormData();
         formData.append("image", picture.image);
         formData.append("name", Input.name);
